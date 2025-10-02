@@ -1,0 +1,111 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - CaaSix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/Logo-caaxis.png" alt="CaaSix" class="logo-img">
+        </a>
+      </div>
+
+      <!-- Botão hamburguer -->
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <!-- Links -->
+      <ul class="menu" id="navLinks">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="index.html#planos">Planos</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Espaço para compensar navbar fixa -->
+  <div style="height:60px"></div>
+
+  <!-- CONTEÚDO PORTFÓLIO -->
+  <h2 class="portfolio-title">Vídeos Institucionais</h2>
+  <section class="portfolio-grid">
+        <div class="portfolio-item" onclick="openVideo('img/Video-07.mp4')">
+      <img src="img/thumb-video-07.jpg" alt="Projeto 1">
+      <h3><span class="highlight">Casa Orange</span></h3>
+    </div>
+        <div class="portfolio-item" onclick="openVideo('img/Video-06.mp4')">
+      <img src="img/thumb-video-06.jpg" alt="Projeto 2">
+      <h3><span class="highlight">Gbio Energia</span></h3>
+    </div>
+        <div class="portfolio-item" onclick="openVideo('img/Video-05.mp4')">
+      <img src="img/thumb-video-05.jpg" alt="Projeto 3">
+      <h3><span class="highlight">ExploreAi</span></h3>
+    </div>
+
+
+        <div class="portfolio-item" onclick="openVideo('img/Video-01.mp4')">
+      <img src="img/thumb-video-01.jpg" alt="Projeto 4">
+      <h3><span class="highlight">Grupo Primova</span></h3>
+    </div>
+        <div class="portfolio-item" onclick="openVideo('img/Video-02.mp4')">
+      <img src="img/thumb-video-02.jpg" alt="Projeto 5">
+      <h3><span class="highlight">CittaMobi</span></h3>
+    </div>
+        <div class="portfolio-item" onclick="openVideo('img/Video-03.mp4')">
+      <img src="img/thumb-video-03.jpg" alt="Projeto 6">
+      <h3><span class="highlight">BRT Sorocaba</span></h3>
+    </div>
+        <div class="portfolio-item" onclick="openVideo('img/Video-04.mp4')">
+      <img src="img/thumb-video-04.jpg" alt="Projeto 7">
+      <h3><span class="highlight">Mobibrasil</span></h3>
+    </div>
+        <div class="portfolio-item" onclick="openVideo('img/Video-08.mp4')">
+      <img src="img/thumb-video-08.jpg" alt="Projeto 3">
+      <h3><span class="highlight">Ateliê Florance</span></h3>
+    </div>
+        <div class="portfolio-item" onclick="openVideo('img/Video-09.mp4')">
+      <img src="img/thumb-video-09.jpg" alt="Projeto 3">
+      <h3><span class="highlight">Nova Mobi PE</span></h3>
+    </div>
+
+
+  </section>
+
+  <h2 class="portfolio-title">Animações</h2>
+  <section class="portfolio-grid">
+    <div class="portfolio-item" onclick="openVideo('img/Animacao-01.mp4')">
+      <img src="img/thumb-animacao-01.jpg" alt="Animação 1">
+      <h3><span class="highlight">70 anos Recap Petrobras</span></h3>
+    </div>
+    <div class="portfolio-item" onclick="openVideo('img/Animacao-02.mp4')">
+      <img src="img/thumb-animacao-02.jpg" alt="Animação 2">
+      <h3><span class="highlight">70 anos RPBC Petrobras</span></h3>
+    </div>
+    <!-- pode adicionar mais animações aqui -->
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <video id="modal-video" controls></video>
+  </div>
+
+  <div id="videoModal" class="modal">
+    <span class="close" onclick="closeVideo()">&times;</span>
+    <video id="videoFrame" controls autoplay></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
